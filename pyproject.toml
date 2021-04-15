@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "wishpot"
+version = "0.1.0"
+description = ""
+authors = ["Tam <tam.jankowska@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2"
+djangorestframework = "^3.12.4"
+djangorestframework-jwt = "^1.11.0"
+cryptography = "^3.4.7"
+python-jose = "^3.2.0"
+certifi = "^2020.12.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
