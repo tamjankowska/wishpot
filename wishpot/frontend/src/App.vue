@@ -47,7 +47,7 @@ export default {
       message: ''
     }
   },
-   methods: {
+  methods: {
     // this method calls the AuthService login() method
     login () {
       auth.login()
