@@ -20,14 +20,16 @@
       @click="logout()">
       Log Out
     </button>
-    {{"{{ "}}{{ "message" }} }}
+    {{"{{ "}}{{ message }} }}
     <br>
+    <UserSignup/>
   </div>
 </template>
 
 <script>
 import AuthService from './auth/AuthService'
 import axios from 'axios'
+import UserSignup from './components/UserSignup'
 
 const API_URL = 'http://localhost:8000'
 const auth = new AuthService()
@@ -65,6 +67,9 @@ export default {
         this.message = response.data || ''
       })
     }
+  },
+  components: {
+    UserSignup
   }
 }
 </script>
