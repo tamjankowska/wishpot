@@ -1,6 +1,7 @@
 const UserSignup = require('@components/UserSignup')
+import { mount } from '@vue/test-utils'
 
 test('signup function exists', () => {
-    const {UserSignup} = render(UserSignup);
-    expect(UserSignup).toBeTruthy();
+    const wrapper = mount(UserSignup)
+    expect(wrapper.vm.UserSignup.user).toBeTruthy();
 })

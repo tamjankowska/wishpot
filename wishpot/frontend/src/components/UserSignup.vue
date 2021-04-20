@@ -1,21 +1,23 @@
 <template>
     <div>
+      <h1>Woop!</h1>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'UserSignup'
-  data() {
+  name: 'UserSignup',
+
+  data () {
     return {
-      user
+      user: ''
     }
   },
   methods: {
-    SignUp: function() {
-      let user = "Bob"
-      return user;
+    SignUp: function () {
+      let user = 'Bob'
+      return user
     }
-  },
+  }
 }
 </script>
