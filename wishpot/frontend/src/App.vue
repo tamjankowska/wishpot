@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>Please work</p>
     <button
       class="btn btn-primary btn-margin"
       v-if="!authenticated"
@@ -27,16 +28,19 @@
 </template>
 
 <script>
-import AuthService from './auth/AuthService'
-import axios from 'axios'
 import UserSignup from './components/UserSignup'
+/*import AuthService from './auth/AuthService'
+import axios from 'axios'
+
 
 const API_URL = 'http://localhost:8000'
-const auth = new AuthService()
+const auth = new AuthService()*/
 
 export default {
   name: 'app',
   data () {
+  },
+  /*data () {
     this.handleAuthentication()
     this.authenticated = false
 
@@ -67,7 +71,7 @@ export default {
         this.message = response.data || ''
       })
     }
-  },
+  },*/
   components: {
     UserSignup
   }

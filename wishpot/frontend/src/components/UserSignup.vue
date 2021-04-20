@@ -14,7 +14,7 @@ export default {
     }
   },
   methods: {
-    SignUp: function () {
+    UserSignup: function () {
       let user = 'Bob'
       return user
     }
