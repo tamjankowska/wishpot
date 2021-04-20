@@ -10,7 +10,6 @@ describe('App', () => {
 
 describe('Mounted app', () => {
     const wrapper = mount(App);
-    const userSignup = wrapper.findComponent(UserSignup);
 
     test('is a Vue instance', () => {
         expect(wrapper.findComponent(App)).toBeTruthy()
@@ -23,15 +22,23 @@ describe('Mounted app', () => {
     it('has a button', () => {
         expect(wrapper.get('button').exists()).toBe(true)
     })
+})
 
-    // it('renders correctly with different data', async () => {
-    //     wrapper.setData({ item: 'game' } )
-    //     await wrapper.vm.$nextTick()
-    //     expect(wrapper.text()).toContain('game')
-    // })
+describe('User Signup', () => {
+    const wrapper = mount(App);
+    const userSignup = wrapper.findComponent(UserSignup);
 
     it('contains a user signup function', () => {
         expect(userSignup.exists()).toBe(true)
+    })
+
+    test('UserSignup returns a user called Bob', () => {
+        const user = wrapper.find('h2')
+        expect(user.text()).toContain('Bob')
+    })
+
+    it('contains a form label', () => {
+        expect(userSignup.get('label').exists()).toBe(true)
     })
 })
 
