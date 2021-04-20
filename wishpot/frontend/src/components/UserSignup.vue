@@ -16,6 +16,7 @@ export default {
   methods: {
     UserSignup: function () {
       let user = 'Bob'
+      console.log(user)
       return user
     }
   }

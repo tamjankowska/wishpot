@@ -1,6 +1,9 @@
 <template>
   <div>
+  <button>Please work</button>
+  <!--
     <p>Please work</p>
+  
     <button
       class="btn btn-primary btn-margin"
       v-if="!authenticated"
@@ -23,7 +26,9 @@
     </button>
     {{"{{ "}}{{ message }} }}
     <br>
-    <UserSignup/>
+  -->
+    <UserSignup/> 
+  
   </div>
 </template>
 
@@ -39,6 +44,9 @@ const auth = new AuthService()*/
 export default {
   name: 'app',
   data () {
+    return {
+      item: 'book'
+    }
   },
   /*data () {
     this.handleAuthentication()
