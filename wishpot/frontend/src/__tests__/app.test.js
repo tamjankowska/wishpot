@@ -16,7 +16,7 @@ describe('Mounted app', () => {
     })
 
     it('renders the correct markup', () => {
-        expect(wrapper.html()).toContain('Please work')
+        expect(wrapper.html()).toContain('Landing page')
     })
 
     it('has a button', () => {

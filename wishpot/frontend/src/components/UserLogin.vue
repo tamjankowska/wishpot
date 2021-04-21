@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>{{ msg }}</h1>
+    <router-link :to="{ name: 'UserSignup' }">Create an account</router-link>
     <div class="form">
       <label for="email">Email</label>
       <input type="text" id="form-email" />
@@ -10,11 +11,11 @@
 
 <script>
 export default {
-  name: 'UserSignup',
+  name: 'UserLogin',
 
   data () {
     return {
-      msg: 'Wishpot signup'
+      msg: 'Wishpot login'
     }
   }
 }

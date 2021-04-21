@@ -1,12 +1,10 @@
 <template>
   <div>
-  <button>Please work</button>
-    <UserSignup/> 
-  
   </div>
 </template>
 
 <script>
+import UserLogin from './components/UserLogin'
 import UserSignup from './components/UserSignup'
 
 export default {
@@ -17,6 +15,7 @@ export default {
     }
   },
   components: {
+    UserLogin,
     UserSignup
   }
 }
