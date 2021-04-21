@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ msg }}</h1>
-    <router-link :to="{ name: 'UserSignup' }">Create an account</router-link>
+    <router-link to="/signup">Create an account</router-link>
     <div class="form">
       <label for="email">Email</label>
       <input type="text" id="form-email" />
