@@ -3,6 +3,10 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import TemplateView
 
+def redirect_view(request):
+    response = redirect('login/')
+    return response
+   
 class SignupView(TemplateView):
     template_name = 'pots/signup.html'
 

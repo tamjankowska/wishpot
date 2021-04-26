@@ -1,0 +1,19 @@
+.form-div {
+    width: 20%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 5%;
+    padding: 2% 0;
+    font-family: serif;
+    text-transform: lowercase;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.767);
+    background: linear-gradient(#B7094C, #0091AD)
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    color: white 75%;
+}

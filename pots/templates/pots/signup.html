@@ -1,19 +1,31 @@
 {% extends "base.html" %}
 
+{% load static %}
+
+{% block CSS %}
+<link rel="stylesheet" type="text/css" href="{% static 'pots/signup.css' %}">
+{% endblock %}
+
 {% block title %} Signup {% endblock %}
 
 {% block content %}
 
-<div id="app">
-    <h1><% message %></h1>
-    <a href="{% url 'login' %}">Login</a>
-    <form method="post" action=".">
-        {% csrf_token %}
+<div class="app">
+    <h1 class="wishpot-logo"><% app_name %></h1>
+    <div class="form-div">
+        <form class="signup-form" method="post" action=".">
+            {% csrf_token %}
+            <h3>{{ form.username.label}}</h3>
+            <h3>{{ form.username }}</h3>
+            <h3>{{ form.password1.label}}</h3>
+            <h3>{{ form.password1 }}</h3>
+            <h3>{{ form.password2.label }}</h3>
+            <h3>{{ form.password2 }}</h3>
 
-        {{ form.as_p }}
-
-        <button type="submit">Sign up</button>
-    </form>
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+    <a href="{% url 'login' %}">Already registered?</a>
     </div>
 </div>
 
@@ -21,9 +33,10 @@
 <script>
     console.log("potatoes!")
     const app = new Vue({
-        el: '#app',
+        el: '.app',
         delimiters: ['<%', '%>'],
         data: {
+            app_name: 'wishpot',
             message: 'Signup!'
         }
     })

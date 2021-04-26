@@ -1,0 +1,22 @@
+.wishpot-logo {
+    font-family: 'Suez One', serif;
+    font-size: 3.5em;
+    color: white;
+    align-self: center;
+    text-align: center;
+    width: 30%;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+body {
+    background: #5C4D7D;
+}
+
+button {
+    width: 20%;
+}
