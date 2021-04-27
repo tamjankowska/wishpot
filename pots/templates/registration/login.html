@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block CSS %}
-
+<link rel="stylesheet" type="text/css" href="{% static 'pots/signup.css' %}">
 {% endblock %}
 
 {% block title %} Login {% endblock %}
@@ -11,16 +11,21 @@
 {% block content %}
 
 <div class="app">
-    <h1 class="wishpot-logo"><% app_name %></h1>
-    <a href="{% url 'signup' %}">Sign up</a>
-    <form class="login-form" method="post" action=".">
-        {% csrf_token %}
+    <h1 class="wishpot-logo">wishpot</h1>
+    <div class="form-div">
+        <form class="login-form" method="post" action=".">
+            {% csrf_token %}
+            <h3>{{ form.username.label}}:</h3>
+            <h3 class="form-field">{{ form.username }}</h3>
+            <h3>{{ form.password.label}}:</h3>
+            <h3 class="form-field">{{ form.password }}</h3>
 
-        {{ form.as_p }}
-
-        <button type="submit">Login</button>
-    </form>
+            <button type="submit">✔</button>
+        </form>
+    </div>
+    <a class="form-switch-link" href="{% url 'signup' %}">Don't have an account?</a>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
@@ -28,7 +33,6 @@
         el: '.app',
         delimiters: ['<%', '%>'],
         data: {
-            app_name: 'wishpot',
             message: 'Login'
         }
     })

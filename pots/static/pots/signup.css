@@ -3,17 +3,74 @@
     display: flex;
     align-self: center;
     justify-content: center;
-    border-radius: 5%;
+    border-radius: 10%;
     padding: 2% 0;
     font-family: serif;
     text-transform: lowercase;
-    font-size: 1em;
     color: rgba(255, 255, 255, 0.767);
-    background: linear-gradient(#B7094C, #0091AD)
+    background: linear-gradient(#b7094cde, #0090adda);
+    line-height: 0.5em;
+    margin: 1% 0;
 }
 
-.signup-form {
+.signup-form, .login-form {
     display: flex;
     flex-direction: column;
     color: white 75%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+}
+
+.form-header {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: underline overline rgba(255, 255, 255, 0.507);
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 17%;
+    left: 48%;
+}
+
+.form-field input {
+    background-color:rgba(255, 255, 255, 0.507);
+    border-radius: 15px;
+    border: #b7094c4f 1px groove;
+    padding: 3% 6%;
+    width: 75%;
+    box-shadow:0 0 15px 4px rgba(49, 32, 49, 0.219);
+    font-family: 'Noto Serif KR', serif;
+}
+
+button {
+    width: 20%;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 4px 2px;
+    background-color:rgba(238, 230, 230, 0.507);
+    color:rgba(238, 230, 230, 0.507);
+    font-size: 2em;
+    border: none;
+    align-self: center;
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.671);
+    cursor: pointer;
+}
+
+.form-switch-link {
+    font-family: 'Raleway', sans-serif;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    text-decoration: underline overline rgba(255, 255, 255, 0.507);
+    font-size: 1em;
+    color: white;
+    font-weight: 200;
+}
+
+.form-switch-link {
+    font-weight: 300;
 }

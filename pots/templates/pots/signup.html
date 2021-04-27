@@ -11,22 +11,21 @@
 {% block content %}
 
 <div class="app">
-    <h1 class="wishpot-logo"><% app_name %></h1>
+    <h1 class="wishpot-logo">wishpot</h1>
     <div class="form-div">
         <form class="signup-form" method="post" action=".">
             {% csrf_token %}
-            <h3>{{ form.username.label}}</h3>
-            <h3>{{ form.username }}</h3>
-            <h3>{{ form.password1.label}}</h3>
-            <h3>{{ form.password1 }}</h3>
-            <h3>{{ form.password2.label }}</h3>
-            <h3>{{ form.password2 }}</h3>
+            <h3>{{ form.username.label}}:</h3>
+            <h3 class="form-field">{{ form.username }}</h3>
+            <h3>{{ form.password1.label}}:</h3>
+            <h3 class="form-field">{{ form.password1 }}</h3>
+            <h3>{{ form.password2.label }}:</h3>
+            <h3 class="form-field">{{ form.password2 }}</h3>
 
-            <button type="submit">Sign up</button>
+            <button type="submit">✔</button>
         </form>
     </div>
-    <a href="{% url 'login' %}">Already registered?</a>
-    </div>
+    <a class="form-switch-link" href="{% url 'login' %}">Already registered?</a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -36,7 +35,6 @@
         el: '.app',
         delimiters: ['<%', '%>'],
         data: {
-            app_name: 'wishpot',
             message: 'Signup!'
         }
     })
