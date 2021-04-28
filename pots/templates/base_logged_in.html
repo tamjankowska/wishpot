@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet"> 
+    {% block CSS %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'pots/main.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    <svg viewBox="0 0 1440 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 101.2L9.6 134.933C20.4 168.667 39.6 236.133 60 295.167C80.4 354.2 99.6 404.8 120 430.1C140.4 455.4 159.6 455.4 180 455.4C200.4 455.4 219.6 455.4 240 430.1C260.4 404.8 279.6 354.2 300 337.333C320.4 320.467 339.6 337.333 360 320.467C380.4 303.6 399.6 253 420 253C440.4 253 459.6 303.6 480 320.467C500.4 337.333 519.6 320.467 540 337.333C560.4 354.2 579.6 404.8 600 362.633C620.4 320.467 639.6 185.533 660 160.233C680.4 134.933 699.6 219.267 720 236.133C740.4 253 759.6 202.4 780 168.667C800.4 134.933 819.6 118.067 840 168.667C860.4 219.267 879.6 337.333 900 379.5C920.4 421.667 939.6 387.933 960 328.9C980.4 269.867 999.6 185.533 1020 202.4C1040.4 219.267 1059.6 337.333 1080 328.9C1100.4 320.467 1119.6 185.533 1140 177.1C1160.4 168.667 1179.6 286.733 1200 354.2C1220.4 421.667 1239.6 438.533 1260 371.067C1280.4 303.6 1299.6 151.8 1320 109.633C1340.4 67.4667 1359.6 134.933 1380 134.933C1400.4 134.933 1419.6 67.4667 1430.4 33.7333L1440 0V506H1430.4C1419.6 506 1400.4 506 1380 506C1359.6 506 1340.4 506 1320 506C1299.6 506 1280.4 506 1260 506C1239.6 506 1220.4 506 1200 506C1179.6 506 1160.4 506 1140 506C1119.6 506 1100.4 506 1080 506C1059.6 506 1040.4 506 1020 506C999.6 506 980.4 506 960 506C939.6 506 920.4 506 900 506C879.6 506 860.4 506 840 506C819.6 506 800.4 506 780 506C759.6 506 740.4 506 720 506C699.6 506 680.4 506 660 506C639.6 506 620.4 506 600 506C579.6 506 560.4 506 540 506C519.6 506 500.4 506 480 506C459.6 506 440.4 506 420 506C399.6 506 380.4 506 360 506C339.6 506 320.4 506 300 506C279.6 506 260.4 506 240 506C219.6 506 200.4 506 180 506C159.6 506 140.4 506 120 506C99.6 506 80.4 506 60 506C39.6 506 20.4 506 9.6 506H0V101.2Z"
+            fill="url(#paint0_linear)"
+        />
+        <defs>
+            <linearGradient
+                id="paint0_linear"
+                x1="720"
+                y1="0"
+                x2="720"
+                y2="506"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop stop-color="#0091AD" />
+                <stop offset="1" stop-color="#455E89" />
+            </linearGradient>
+        </defs>
+    </svg>
+    {% endblock %}
+</body>
+</html>
