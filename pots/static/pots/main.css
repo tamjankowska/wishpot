@@ -11,8 +11,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 100%;
 }
 
-body {
+.html-tag {
+    height: auto;
     background: #5C4D7D;
 }

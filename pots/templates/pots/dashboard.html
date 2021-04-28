@@ -1,4 +1,4 @@
-{% extends "base_logged_in.html" %}
+{% extends "base_authenticated.html" %}
 
 {% load static %}
 
@@ -12,8 +12,18 @@
 <div class="app">
     <div class="spacer"></div>
     <h1 class="wishpot-logo">wishpot</h1>
+    <div class="dash-buttons">
+        <button class="dashboard-button">new list</button>
+        <button class="dashboard-button">lists</button>
+        <button class="dashboard-button">spends</button>
+    </div>
+    {% block svg %}
+    {{ block.super }}
+    {% endblock %}
 </div>
-    
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
     console.log("potatoes!")
