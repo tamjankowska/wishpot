@@ -17,13 +17,19 @@
     
     <div class="dash-buttons">
         <button class="dashboard-button">
-            <span title="new list" class="iconify" data-inline="false" data-icon="dashicons:plus"></span>
+            <a href="{% url 'new-list' %}">
+                <span title="new list" class="iconify" data-inline="false" data-icon="dashicons:plus"></span>
+            </a>
         </button>
         <button class="dashboard-button">
-            <span title="lists" class="iconify" data-inline="false" data-icon="fluent:document-bullet-list-24-regular"></span>
+            <a href="{% url 'lists' %}">
+                <span title="lists" class="iconify" data-inline="false" data-icon="fluent:document-bullet-list-24-regular"></span>
+            </a>
         </button>
         <button class="dashboard-button">
-            <span title="spends" class="iconify" data-inline="false" data-icon="emojione-monotone:money-with-wings"></span>
+            <a href="{% url 'spends' %}">
+                <span title="spends" class="iconify" data-inline="false" data-icon="emojione-monotone:money-with-wings"></span>
+            </a>
         </button>
     </div>
     {% block svg %}

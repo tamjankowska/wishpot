@@ -20,6 +20,14 @@
     color: rgba(255, 255, 255, 0.749);
 }
 
+.dashboard-button a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.dashboard-button a:hover {
+    color: white;
+}
 .iconify {
     font-size: 4em;
     font-weight: bold;

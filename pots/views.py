@@ -32,3 +32,21 @@ class DashboardView(TemplateView):
 
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name)
+
+class NewListView(TemplateView):
+    template_name = 'pots/new_list.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name)
+
+class ListsView(TemplateView):
+    template_name = 'pots/lists.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name)
+
+class SpendsView(TemplateView):
+    template_name = 'pots/spends.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name)
