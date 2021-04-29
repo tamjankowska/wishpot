@@ -1,3 +1,10 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+
 .wishpot-logo {
     font-family: 'Suez One', serif;
     font-size: 3.5em;
@@ -7,11 +14,27 @@
     width: 30%;
 }
 
+.wishpot-logo a {
+    text-decoration: none;
+}
+
+.wishpot-logo a:visited {
+    color: white;
+}
+
+.wishpot-logo a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .app {
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 100%;
+    width: 100%;
+    background: url(./waves.svg) no-repeat;
+    background-position: bottom;
 }
 
 .html-tag {

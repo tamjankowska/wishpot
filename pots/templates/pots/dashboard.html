@@ -6,24 +6,32 @@
 <link rel="stylesheet" type="text/css" href="{% static 'pots/dashboard.css' %}">
 {% endblock %}
 
-{% block title %}Wishpot: Dashboard{% endblock %}
+{% block title %}wishpot - dashboard{% endblock %}
 
 {% block content %}
 <div class="app">
     <div class="spacer"></div>
-    <h1 class="wishpot-logo">wishpot</h1>
+        <h1 class="wishpot-logo">
+            <a href="{% url 'dashboard' %}">wishpot</a>
+        </h1>
+    
     <div class="dash-buttons">
-        <button class="dashboard-button">new list</button>
-        <button class="dashboard-button">lists</button>
-        <button class="dashboard-button">spends</button>
+        <button class="dashboard-button">
+            <span title="new list" class="iconify" data-inline="false" data-icon="dashicons:plus"></span>
+        </button>
+        <button class="dashboard-button">
+            <span title="lists" class="iconify" data-inline="false" data-icon="fluent:document-bullet-list-24-regular"></span>
+        </button>
+        <button class="dashboard-button">
+            <span title="spends" class="iconify" data-inline="false" data-icon="emojione-monotone:money-with-wings"></span>
+        </button>
     </div>
     {% block svg %}
     {{ block.super }}
     {% endblock %}
 </div>
 
-
-
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
     console.log("potatoes!")
