@@ -50,3 +50,9 @@ class SpendsView(TemplateView):
 
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name)
+
+class ProfileView(TemplateView):
+    template_name = 'pots/profile.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name)

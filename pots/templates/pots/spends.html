@@ -1,9 +1,13 @@
-{% extends "base_authenticated.html" %}
+{% extends "base.html" %}
 
 {% load static %}
 
 {% block title %}dashboard: spends{% endblock %}
 
 {% block content %}
-<h1>Spends</h1>
+<div class="app">
+    <h1>Spends</h1>
+    {{ block.super }}
+</div>
+
 {% endblock %}

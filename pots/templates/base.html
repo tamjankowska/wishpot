@@ -17,6 +17,11 @@
 </head>
 <body>
     {% block content %}
+    <div class="profile-link">
+        <a href="{% url 'profile' %}">
+            <img src="../../static/pots/profile.svg">
+        </a>
+    </div>
     {% endblock %}
 </body>
 </html>

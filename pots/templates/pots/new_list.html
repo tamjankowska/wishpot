@@ -1,9 +1,23 @@
-{% extends "base_authenticated.html" %}
+{% extends "base.html" %}
 
 {% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'pots/new_list.css' %}">
+{% endblock %}
 
 {% block title %}dashboard: new list{% endblock %}
 
 {% block content %}
-<h1>New list</h1>
+<div class="app">
+    <div class="spacer"></div>
+    <h1 class="wishpot-logo">
+        <a href="{% url 'dashboard' %}">wishpot</a>
+    </h1>
+    <div class="new-list-container">
+        <p>New list stuff</p>
+    </div>
+    {{ block.super }}
+</div>
+
 {% endblock %}

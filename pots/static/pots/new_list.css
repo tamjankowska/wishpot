@@ -1,0 +1,12 @@
+.new-list-container {
+    border: 3px #5C4D7D groove;
+    border-radius: 15px;
+    width: 75%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: #455E89;
+    font-family: 'Raleway', sans-serif;
+    color: red;
+}

@@ -41,3 +41,13 @@ html, body {
     height: auto;
     background: #5C4D7D;
 }
+
+.profile-link {
+    position: fixed;
+    bottom: 10%;
+    left: 48%;
+}
+
+.profile-link:hover {
+    filter:saturate(120%)
+}

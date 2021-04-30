@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}wishpot: profile{% endblock %}
+
+{% block content %}
+<div class="app">
+    <div class="spacer"></div>
+    <h1 class="wishpot-logo">
+        <a href="{% url 'dashboard' %}">wishpot</a>
+    </h1>
+    <h1>Profile</h1>
+    {{ block.super }}
+</div>
+
+{% endblock %}

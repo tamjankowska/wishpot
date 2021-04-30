@@ -1,4 +1,4 @@
-{% extends "base_authenticated.html" %}
+{% extends "base.html" %}
 
 {% load static %}
 
@@ -32,9 +32,8 @@
             </a>
         </button>
     </div>
-    {% block svg %}
     {{ block.super }}
-    {% endblock %}
+
 </div>
 
 <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>

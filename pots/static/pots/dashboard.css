@@ -38,3 +38,9 @@
     cursor: pointer;
     color: white;
 }
+
+.profile-link {
+    position: fixed;
+    bottom: 10%;
+    left: 48%;
+}
