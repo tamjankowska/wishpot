@@ -2,11 +2,21 @@
 
 {% load static %}
 
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'pots/spends.css' %}">
+{% endblock %}
+
 {% block title %}dashboard: spends{% endblock %}
 
 {% block content %}
 <div class="app">
-    <h1>Spends</h1>
+    <div class="spacer"></div>
+    <h1 class="wishpot-logo">
+        <a href="{% url 'dashboard' %}">wishpot</a>
+    </h1>
+    <div class="spends-container">
+        <h1>Spends</h1>
+    </div>
     {{ block.super }}
 </div>
 

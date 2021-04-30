@@ -1,12 +1,16 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 
-{% load static %}
+{% load static %} 
 
 {% block css %}
-<link rel="stylesheet" type="text/css" href="{% static 'pots/new_list.css' %}">
-{% endblock %}
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'pots/new_list.css' %}"
+/>
+{% endblock %} 
 
-{% block title %}dashboard: new list{% endblock %}
+{% block title %} dashboard: new list {% endblock %} 
 
 {% block content %}
 <div class="app">
@@ -16,6 +20,7 @@
     </h1>
     <div class="new-list-container">
         <p>New list stuff</p>
+        <h1>Why you no worky</h1>
     </div>
     {{ block.super }}
 </div>
